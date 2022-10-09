@@ -1,24 +1,23 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
 int factorial(int);
-
-int main() {
-    int n, result;
-
-    cout << "Enter a non-negative number: ";
-    cin >> n;
-
+int main() 
+{
+    int n = 0, result = 0; //initializing variables
+    cout << "Enter a non-negative number to proceed : ";
+    cin >> n; //get value
     result = factorial(n);
-    cout << "Factorial of " << n << " = " << result;
+    cout << "The factorial of : " << n << " = " << result;
     return 0;
 }
 
-int factorial(int n) {
+int factorial(int n) 
+{
     if (n > 1) {
-        return n + factorial(n - 1);
-    } else {
+        return n + factorial(n - 1); //formula
+    }
+	else
+	{
         return 1;
     }
 }
-
