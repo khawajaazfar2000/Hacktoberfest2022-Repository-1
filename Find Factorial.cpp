@@ -3,17 +3,21 @@ using namespace std;
 int factorial(int);
 int main() 
 {
-    int n = 0, result = 0; //initializing variables
-    cout << "Enter a non-negative number to proceed : ";
-    cin >> n; //get value
-    result = factorial(n);
-    cout << "The factorial of : " << n << " = " << result;
+    int a = 0, result = 0; //initializing variables
+    cout <<"----------------" <<endl;
+    cout<< "Enter any number to get factorial"<<endl;
+    cin >> a; //get value
+    result = factorial(a);
+    cout << "The result for factorial of the number : " << a << " = " << result;
     return 0;
 }
 
 int factorial(int n) 
+
 {
-    if (n > 1) {
+   
+    if (n > 1)
+	 {
         return n + factorial(n - 1); //formula
     }
 	else
