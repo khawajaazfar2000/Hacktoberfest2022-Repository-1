@@ -3,25 +3,17 @@ using namespace std;
 int factorial(int);
 int main() 
 {
-    int a = 0, result = 0; //initializing variables
-    cout <<"----------------" <<endl;
+    int abc = 0, result = 0; //initializing variables
+    cout <<"-------------------------" <<endl;
     cout<< "Enter any number to get factorial"<<endl;
-    cin >> a; //get value
-    result = factorial(a);
-    cout << "The result for factorial of the number : " << a << " = " << result;
+    cin >> abc; //get value of the the number that is abc
+    result = factorial(abc);
+    cout << "The result for factorial of the number of abc would be : " << abc << " = " << result;
     return 0;
 }
 
 int factorial(int n) 
-
-{
-   
-    if (n > 1)
-	 {
-        return n + factorial(n - 1); //formula
-    }
-	else
-	{
-        return 1;
-    }
+//formula
+{ if (n > 1){ return n + factorial(n - 1);  }
+	else {return 1;}
 }
